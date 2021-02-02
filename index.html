@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    
+    <title>CSS-Cheatsheet: Selectors</title>
+  </head>
+  <body>
+    
+      <h1>CSS Selectors</h1>
+      <h2>Cheatsheet</h2>
+   
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Meaning</th>
+        <th>Syntax & Specifity</th>
+    </thead>
+    <tbody>
+      </tr>
+      <tr>
+        <td class='firstcolumn'>Universal Selector</td>
+        <td>Applies to all elements in the document</td>
+        <td><span class="code">* {}</span><br><br>
+            Targets all elements on the page</td>
+        
+      </tr>
+      <tr>
+        <td class='firstcolumn'>Type Selector</td>
+        <td>Matches element names</td>
+        <td><span class="code">h1, h2, h3 {}</span><br><br>
+          Targets the &#x3C;h1&#x3E;, &#x3C;h2&#x3E; and &#x3C;h3&#x3E;
+          elements</td>
+        
+      </tr>
+      <tr>
+        <td class='firstcolumn'>Class Selector</td>
+        <td>Matches an element whose
+            class attribute has a value that
+            matches the one specified after
+            the period (or full stop) symbol</td>
+        <td><span class="code">.note {}</span> <br><br>
+            Targets any element whose class
+            attribute has a value of note <br><br>
+            <span class="code">p.note {} </span><br><br>
+            Targets only &#x3C;p&#x3E; elements
+            whose class attribute has a
+            value of note</td>
+      
+      </tr>
+      <tr>
+        <td class='firstcolumn'>ID Selector</td>
+        <td>Matches an element whose
+            id attribute has a value that
+            matches the one specified after
+            the pound or hash symbol</td>
+        <td><span class="code">#introduction {}</span> <br><br>
+            Targets the element whose
+            id attribute has a value of
+            introduction</td>
+      </tr>
+     
+      <tr>
+        <td class='firstcolumn'>Child Selector</td>
+        <td>Matches an element that is a
+            direct child of another</td>
+        <td><span class="code">li&#x3E;a {} </span><br><br>
+          Targets any &#x3C;a&#x3E; elements that
+          are children of an &#x3C;li&#x3E; element
+          (but not other &#x3C;a&#x3E; elements in
+          the page)
+            <!-- li>a {}
+            Targets any <a> elements that
+            are children of an <li> element
+            (but not other <a> elements in
+            the page) -->
+          </td>
+      </tr>
+      <tr>
+        <td class='firstcolumn'>Descendant Selector</td>
+        <td>Matches an element that is a
+          descendent of another specified
+          element (not just a direct child of
+          that element)</td>
+        <td><span class="code">p a {}</span><br><br>
+          Targets any &lt;a&gt; elements that
+          sit inside a &lt;p&gt; element, even if
+          there are other elements nested
+          between them</td>
+      </tr>
+      <tr>
+        <td class='firstcolumn'>Adjacent Sibling
+          Selector</td>
+        <td>Matches an element that is the
+          next sibling of another</td>
+          <td><span class="code">h1+p {}</span><br><br>
+            Targets the first &lt;p&gt; element
+            after any &lt;h1&gt; element (but not
+            other &lt;p&gt; elements)</td>
+      </tr>
+      <tr>
+        <td class='firstcolumn'>General Sibling
+          Selector</td>
+        <td>Matches an element that is the
+          next sibling of another, although it
+          does not have to be the directly
+          preceding element</td>
+          <td><span class="code">h1~p {}</span><br><br>
+            If you had two &lt;p&gt; elements that
+            are siblings of an &lt;h1&gt; element,
+            this rule would apply to both</td>
+      </tr>
+      
+    </tbody>
+    </table>
+  </body>
+</html>
